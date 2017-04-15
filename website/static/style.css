@@ -99,11 +99,11 @@ p {
 
 }
 img.headshot {
-    width:150px;max-width:100%;float:left
+    width:125px;max-width:100%;float:left
 }
 
 img.headshot-right {
-    width:150px;max-width:100%;float:right
+    width:125px;max-width:100%;float:right
 }
 
 img.seal {
