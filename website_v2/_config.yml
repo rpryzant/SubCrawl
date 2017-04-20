@@ -1,0 +1,10 @@
+# Site settings
+title: SubCrawl
+tag_text: SubCrawl
+description: DESCRIPTION HERE
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed
