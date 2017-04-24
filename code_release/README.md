@@ -10,6 +10,8 @@ These can all be installed with pip.
 * `ffmpy`
 * `nltk`
 
+Additionally, some of the corpus_processing scripts make use of [google/sentencepiece](https://github.com/google/sentencepiece):
+
 
 ## Description
 
