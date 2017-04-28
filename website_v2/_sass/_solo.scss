@@ -29,6 +29,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+p, ul, tr {
+  font-size: 18px;
+}
+
 h1 {
   font-family: Helvetica, sans-serif;
   margin: 0 0 0.5rem -0.1rem /* align left edge */;
@@ -159,14 +163,14 @@ img.headshot {
     width:125px;
     max-width:100%;
     float:left;
-    margin-left: 35%;
+    margin-left: 25%;
 }
 
 img.headshot-right {
     width:125px;
     max-width:100%;
     float:right;
-    margin-right: 35%;
+    margin-right: 25%;
 }
 
 

@@ -3,8 +3,19 @@ layout: default
 ---
 
 ## About
-* brief summary/intro
-* small table of stats
+
+SubCrawl aims to support the research and development of machine translation systems, information extraction, and other language processing techniques. Researchers at Stanford and Google created this corpus by crawling the internet for movie and tv subtitles, then aligining their captions. [Fork us on GitHub!](https://github.com/rpryzant/SubCrawl)
+
+## Features
+
+* A **large** corpus of with translations for over 3.2 million sentences
+* Translations of **casual**, and **colloquial** language, domains that are hard to find in JA-EN MT. 
+* **Pre-processed** data, including tokenized train/dev/test splits.
+* **Code** for making your own dataset and **tools** for manipulating MT data.
+
+## Corpus Contents
+
+
 
 | *Split* | *Phrase Pairs* |
 |---------|----------------|
@@ -28,14 +39,16 @@ layout: default
 * live demo of a trained model?
 
 ## Download
-* training sets
-* test set 1
-* test set 2
-* example tokenized
-* example vocabs
+* [Code]()
+* [Raw corpus]()
+* [Official splits]()
+* [Example tokenization]()
+  * BPE with vocab size of 16000 
+
 
 ## Cite
 
 ```
 archive or emnlp citation
 ```
+
