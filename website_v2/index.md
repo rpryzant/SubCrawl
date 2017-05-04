@@ -10,10 +10,10 @@ SubCrawlは、機械翻訳システム、情報抽出、その他の言語処理
 
 ## Features
 
-* A **large** corpus of with translations for over 3.2 million sentences.
-* Translations of **casual**, and **colloquial** language, domains that are hard to find in JA-EN MT. 
-* **Pre-processed** data, including tokenized train/dev/test splits.
-* **Code** for making your own dataset and **tools** for manipulating MT data.
+* A large corpus of with translations for over 3.2 million sentences.
+* Translations of casual, and colloquial language, domains that are hard to find in JA-EN MT. 
+* Pre-processed data, including tokenized train/dev/test splits.
+* Code for making your own crawled datasets and tools for manipulating MT data.
 
 * 320万件以上の翻訳を含む大規模な**コーパス。
 * カジュアル、口語言語の翻訳、JA-EN MTでは見つからないドメイン。
@@ -34,23 +34,17 @@ SubCrawlは、機械翻訳システム、情報抽出、その他の言語処理
 
 | Corpus        | Vocab Size             |
 |---------------|------------------------|
-| Pre-Tokenized | 16000                  |
 | Raw English   | 379558 unique words    |
 | Raw Japanese  | 6113 unique characters |
 
 
 
 
-## Samples
-* some samples 
-* live demo of a trained model?
-
 ## Download
 * [Code]()
 * [Raw corpus]()
 * [Official splits]()
-* [Example tokenization]()
-  * BPE with vocab size of 16000 
+* [Example tokenization](). This pre-processed data is [BPE-tokenized] and has a vocab size of 16000.
 
 ## Contact
 
