@@ -18,11 +18,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-    	      <img src="img/ja.png" alt="Reid Pryzant" class="headshot">
-              <img src="img/en.png" alt="Reid Pryzant" class="headshot-right">
+    	      <img src="img/flags.png" alt="flags" class="headshot">
+              <img src="img/logos.jpg" alt="Reid Pryzant" class="headshot-right">
 
                     <h1>SubCrawl</h1>
-                        <small style="position: absolute; width: 66%; text-align: center">
+                        <small style="position: absolute; width: 70%; text-align: center">
                             <a>English</a> <span class="sep">|</span>
                             <span style="display: inline-block; white-space: nowrap;">
                                 <a>日本語</a> <span class="sep">
@@ -34,7 +34,15 @@
         <div class="row">
             <div class="col-sm-3"><h5>About</h5></div>
             <div class="col-sm-9">
-brief summary/intro
+                SubCrawl aims to support the research and development of machine translation systems, information extraction, and other language processing techniques. It consists of 3.2M parallel sentences.
+
+                </br></br>
+
+                SubCrawl is the product of a collaboration between Stanford University, Google Brain, and Rakuten Institute of Technology. It was created by crawling the internet for movie and tv subtitles and aligining their captions. It is the largest freely available EN-JA corpus and the only to include colloquial language.  
+
+                </br></br>
+
+                You can download the scripts, tools, and crawlers used to create this dataset on <a href="https://github.com/rpryzant/SubCrawl" target="_blank" rel="nofollow">Github</a>.
             </div>
         </div>
         <hr/>
@@ -43,28 +51,45 @@ brief summary/intro
 
 
         <div class="row">
-            <div class="col-sm-3"><h5>Features</h5></div>
+            <div class="col-sm-3"><h5>Details</h5></div>
             <div class="col-sm-9">
                 <ul style="margin: 0 0 3px 0">
-                    <li> some linguistic insights/cool stats 
+                    <li> A large corpus consisting of over 3.2 million sentences.
+                    <li> Translations of casual language, colloquialisms, expository writing, and narrative discourse. These are domains that are hard to find in JA-EN MT. 
+                    <li> Pre-processed data, including tokenized train/dev/test splits.
+                    <li> Code for making your own crawled datasets and tools for manipulating MT data.
                 </ul>
+
+                </br></br>
+
+               <table class="tg">
+                  <tr>
+                    <th class="tg-031e"><b>Split</b></th>
+                    <th class="tg-031e"><b>Phrase Pairs</b></th>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Raw</td>
+                    <td class="tg-031e">3,243,887</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Train</td>
+                    <td class="tg-031e">3,239,888</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Dev</td>
+                    <td class="tg-031e">2000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Test</td>
+                    <td class="tg-031e">3001</td>
+                  </tr>
+                </table>   
+
             </div>
         </div>
         <hr/>
 
 
-
-
-        <div class="row">
-            <div class="col-sm-3"><h5>Samples</h5></div>
-            <div class="col-sm-9">
-                <ul style="margin: 0 0 3px 0">
-                    <li> some samples 
-                    <li> live demo of a trained model?
-                </ul>
-            </div>
-        </div>
-        <hr/>
 
 
 
@@ -90,7 +115,7 @@ brief summary/intro
             <div class="col-sm-3"><h5>Cite</h5></div>
             <div class="col-sm-9">
                 <pre>
-                    archive or emnlp citation
+                    LREC citation
                 </pre>
             </div>
         </div>
@@ -99,11 +124,10 @@ brief summary/intro
 
 
 
+
         <div class="footer">
-    	<a href="https://nlp.stanford.edu/"><img  src="img/stanford.png" alt="Stanford" class="seal"></a>
-        <a>English</a> <span class="sep">|</span>
-        <a>日本語</a>
-	    <a href="https://research.google.com/teams/brain/"><img src="img/brain.jpg" style="float: right" alt="Williams"" class="seal"></a>
+            <a>English</a> <span class="sep">|</span>
+            <a>日本語</a>
         </div>
     </div>
 </br></br>
