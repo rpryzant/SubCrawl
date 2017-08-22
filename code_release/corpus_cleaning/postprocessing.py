@@ -9,8 +9,9 @@ python postprocessing.py [en file] [ja file]
 """
 import sys
 from tqdm import tqdm
+import enchant
 
-
+dictionary = enchant.Dict("en_US")
 VALID_PUNCTUATION = '!#$%&(),.:;?\'[]{}'
 
 
