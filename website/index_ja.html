@@ -1,137 +1,139 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-   <title>JESC</title>
+	  <head>
+		     <title>JESC</title>
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-    <script type="text/javascript" src="https://use.fontawesome.com/981e0eb420.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="./static/style.css" />
-</head>
+		         <meta charset="utf-8">
+			     <meta name="viewport" content="width=device-width, initial-scale=1">
+			         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+				     <script type="text/javascript" src="https://use.fontawesome.com/981e0eb420.js"></script>
+				         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+					     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+					         <link rel="stylesheet" type="text/css" href="./static/style.css" />
+	  </head>
 
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-              <img src="img/flags.png" alt="flags" class="headshot">
-              <img src="img/logos.jpg" alt="Reid Pryzant" class="headshot-right">
+	  <body>
+		      <div class="container">
+			              <div class="row">
+					                  <div class="col-sm-12">
+								                <img src="img/flags.png" alt="flags" class="headshot">
+										              <img src="img/logos.jpg" alt="Reid Pryzant" class="headshot-right">
 
-                    <h1>JESC</h1>
-                        <h5 style="text-align: center"> Japanese-English Subtitle Corpus</h5>
+											                          <h1>JESC</h1>
+														                          <h5 style="text-align: center"> Japanese-English Subtitle Corpus</h5>
 
-                        <small style="position: absolute; width: 97%; text-align: center">
-                            <a href="index.html">English</a> <span class="sep">|</span>
-                            <span style="display: inline-block; white-space: nowrap;">
-                                <a href="index_ja.html">日本語</a> <span class="sep">
-                            </span>
-                        </small>
-            </div>
-        </div>
-        <hr/>
-        <div class="row">
-            <div class="col-sm-3"><h5>About</h5></div>
-            <div class="col-sm-9">
-                JESC aims to support the research and development of machine translation systems, information extraction, and other language processing techniques. It consists of 3.2M parallel sentences.
+																	                          <small style="position: absolute; width: 97%; text-align: center">
+																					                              <a href="index.html">English</a> <span class="sep">|</span>
+																								                                  <span style="display: inline-block; white-space: nowrap;">
+																													                                  <a href="index_ja.html">日本語</a> <span class="sep">
+																																		                              </span>
+																																					                              </small>
+																																								                  </div>
+																																										          </div>
+																																											          <hr/>
+																																												          <div class="row">
+																																														              <div class="col-sm-3"><h5>このコーパスについて</h5></div>
+																																															                  <div class="col-sm-9">
+																																																		                  JESCは機械翻訳、情報抽出及びその他言語処理技術の研究と開発をサポートするため構築されました。JESCは320万の日英対訳文で成されています。
 
-                </br></br>
+																																																				                  </br></br>
 
-                JESC is the product of a collaboration between Stanford University, Google Brain, and Rakuten Institute of Technology. It was created by crawling the internet for movie and tv subtitles and aligining their captions. It is one of the largest freely available EN-JA corpus, and covers the poorly represented domain of colloquial language.  
+																																																						                  JESCはスタンフォード大学、グーグルブレイン、RITのコラボーレーションによって 、インタネット上からクロールされたの映画とTV番組の字幕データのキャプションをアラインメントすることで構築されました。JESCは自由に利用できる日英対訳コーパスの中で最大規模であり、既存のコーパスではカバーされなかった口語の対訳も含んでいます。
+																	                  </br></br>
 
-                </br></br>
+																																																										                このデータセットを作るために使われたスクリプト、ツール及びクローラーは</br> <a href="https://github.com/rpryzant/SubCrawl" target="_blank" rel="nofollow">ここ</a>でダウンロードできます。
 
-                You can download the scripts, tools, and crawlers used to create this dataset on <a href="https://github.com/rpryzant/SubCrawl" target="_blank" rel="nofollow">Github</a>.
-            </div>
-        </div>
-        <hr/>
-
-
-
-
-        <div class="row">
-            <div class="col-sm-3"><h5>Contents</h5></div>
-            <div class="col-sm-9">
-                <ul style="margin: 0 0 3px 0">
-                    <li> A large corpus consisting of over 3.2 million sentences.
-                    <li> Translations of casual language, colloquialisms, expository writing, and narrative discourse. These are domains that are hard to find in JA-EN MT. 
-                    <li> Pre-processed data, including tokenized train/dev/test splits.
-                    <li> Code for making your own crawled datasets and tools for manipulating MT data.
-                </ul>
-
-                </br></br>
-
-               <table class="tg">
-                  <tr>
-                    <th class="tg-031e"><b>Split</b></th>
-                    <th class="tg-031e"><b>Phrase Pairs</b></th>
-                  </tr>
-                  <tr>
-                    <td class="tg-031e">Raw</td>
-                    <td class="tg-031e">3,243,887</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-031e">Train</td>
-                    <td class="tg-031e">3,239,888</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-031e">Dev</td>
-                    <td class="tg-031e">2000</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-031e">Test</td>
-                    <td class="tg-031e">3001</td>
-                  </tr>
-                </table>   
-
-            </div>
-        </div>
-        <hr/>
+																																																												              </div>
+																																																													              </div>
+																																																														              <hr/>
 
 
 
 
+																																																															              <div class="row">
+																																																																	                  <div class="col-sm-3"><h5>コンテンツ</h5></div>
+																																																																			              <div class="col-sm-9">
+																																																																					                      <ul style="margin: 0 0 3px 0">
+																																																																								                          <li> 320万文で成される大規模対訳コーパス。
+																																																																												                      <li> 日常会話、口語、説明句、談話の対訳。これらは既存のコーパスではカバーされてなかったドメインです。
+
+																																																																															                          <li> 	前処理済みの、トークナイズされた訓練（train）/チューニング（dev）/評価（test）データセット。
+																																																																																			                      <li> 自作クローラの作成用のコードと、MTデータを操作するためのツール。
+
+																																																																																						                      </ul>
+
+																																																																																								                      </br></br>
+
+																																																																																										                     <table class="tg">
+																																																																																													                       <tr>
+																																																																																																                           <th class="tg-031e"><b>内容</b></th>
+																																																																																																			                       <th class="tg-031e"><b>対訳文数</b></th>
+																																																																																																					                         </tr>
+																																																																																																								                   <tr>
+																																																																																																											                       <td class="tg-031e">全データ</td>
+																																																																																																													                           <td class="tg-031e">3,243,887</td>
+																																																																																																																                     </tr>
+																																																																																																																		                       <tr>
+																																																																																																																					                           <td class="tg-031e">訓練データ</td>
+																																																																																																																								                       <td class="tg-031e">3,239,888</td>
+																																																																																																																										                         </tr>
+																																																																																																																													                   <tr>
+																																																																																																																																                       <td class="tg-031e">チューニングデータ</td>
+																																																																																																																																		                           <td class="tg-031e">2000</td>
+																																																																																																																																					                     </tr>
+																																																																																																																																							                       <tr>
+																																																																																																																																										                           <td class="tg-031e">評価データ</td>
+																																																																																																																																													                       <td class="tg-031e">3001</td>
+																																																																																																																																															                         </tr>
+																																																																																																																																																		                 </table>   
+
+																																																																																																																																																				             </div>
+																																																																																																																																																					             </div>
+																																																																																																																																																						             <hr/>
 
 
 
-        <div class="row">
-            <div class="col-sm-3"><h5>Download</h5></div>
-            <div class="col-sm-9">
-                <ul style="margin: 0 0 3px 0">
-                    <li> <a>Raw corpus</a>
-                    <li> <a>Official splits</a>
-                    <li> <a>Tokenized splits</a>
-                    <li> <a>Code</a>
-                </ul>
-            </div>
-        </div>
-        <hr/>
 
 
 
-        <div class="row">
-            <div class="col-sm-3"><h5>Cite</h5></div>
-            <div class="col-sm-9">
-                <pre>
+
+																																																																																																																																																							             <div class="row">
+																																																																																																																																																									                 <div class="col-sm-3"><h5>ダウンロード</h5></div>
+																																																																																																																																																											             <div class="col-sm-9">
+																																																																																																																																																													                     <ul style="margin: 0 0 3px 0">
+																																																																																																																																																																                         <li> <a>オリジナルコーパス</a>
+																																																																																																																																																																				                     <li> <a>分割データ</a>
+																																																																																																																																																																							                         <li> <a>トークナイズされた分割データ</a>
+																																																																																																																																																																											                     <li> <a>コード</a>
+																																																																																																																																																																														                     </ul>
+																																																																																																																																																																																                 </div>
+																																																																																																																																																																																		         </div>
+																																																																																																																																																																																			         <hr/>
+
+
+
+																																																																																																																																																																																				         <div class="row">
+																																																																																																																																																																																						             <div class="col-sm-3"><h5>引用</h5></div>
+																																																																																																																																																																																							                 <div class="col-sm-9">
+																																																																																																																																																																																										                 <pre>
                     LREC citation
                 </pre>
-            </div>
-        </div>
-        <hr/>
+		            </div>
+			            </div>
+				            <hr/>
 
 
 
 
 
-        <div class="footer">
-            <a href="index.html">English</a> <span class="sep">|</span>
-            <a href="index_ja.html">日本語</a>
-        </div>
-    </div>
-</br></br>
-</body>
+					            <div class="footer">
+							                <a href="index.html">English</a> <span class="sep">|</span>
+									            <a href="index_ja.html">日本語</a>
+										            </div>
+											        </div>
+												</br></br>
+	  </body>
 
 </html>
