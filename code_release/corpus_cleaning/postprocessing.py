@@ -66,7 +66,7 @@ ja_lines = ja.readlines()
 for en_l, ja_l in tqdm(zip(en_lines, ja_lines)):
     cleaned_line = en_l.strip('- ').lstrip('.)] ').rstrip(',([ ')
     cleaned_line = ''.join(c for c in en_l if safe(c)).strip().lstrip('.')
-    cleaned_line = cleaned_line.replace('  ', ' ').lower()
+    cleaned_line = cleaned_line.replace('  ', ' ').lower().rstrip(',')
 
     ja_cleaned = ja_l.lstrip('- ').strip()
 
