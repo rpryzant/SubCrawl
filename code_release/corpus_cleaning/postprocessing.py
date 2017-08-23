@@ -7,6 +7,7 @@ non-english examples, etc
 === USAGE
 python postprocessing.py [en file] [ja file]
 """
+import string
 import sys
 from tqdm import tqdm
 import enchant
