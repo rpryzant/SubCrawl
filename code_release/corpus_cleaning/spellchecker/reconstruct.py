@@ -3,9 +3,6 @@
 This is a spellchecker that does dfs through the space of possible reconstructions, 
     with a combined bigram+unigram language model. 
 
-Note that it only corrects words within edit distance 1, but you can change that if you like.
-
-
 === USAGE
 Make a `reconstructor` object, then use it however you want!
 
@@ -21,7 +18,6 @@ import re
 import time
 import os
 import random
-
 
 
 class VowelInsertionProblem:
@@ -116,6 +112,7 @@ class UniformCostSearch:
         if self.verbose >= 1:
             print "No path found"
 
+
 # Data structure for supporting uniform cost search.
 class PriorityQueue:
     def  __init__(self):
@@ -177,8 +174,6 @@ class wordsegUtil:
             t = t[:i] + t[i+1:]
             yield t
 
-
-    ############################################################
     # Make an n-gram model of words in text from a corpus.
     @staticmethod
     def makeLanguageModels(path):
@@ -240,7 +235,6 @@ class wordsegUtil:
 
         return smoothModel
 
-    ############################################################
     # Make a map for inverse lookup of words missing chars ->
     # full words
     @staticmethod
@@ -264,7 +258,6 @@ class wordsegUtil:
         return possibleFills, dictionary
 
 
-
 class Reconstructor:
     def __init__(self, corpus=None):
         corpus = corpus or 'leo-will.txt'
@@ -278,7 +271,6 @@ class Reconstructor:
         s = wordsegUtil.cleanLine(s)
         ws = [w for w in wordsegUtil.words(s)]
         return spellCheckUtil.insertVowels(ws, self.bigramCost, self.possibleFills, self.dictionary)
-
 
 
 class Shell:
@@ -340,20 +332,6 @@ class Shell:
 
             print ''
 
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     shell = Shell()
     shell.main()
-
-
-
-
-
-
