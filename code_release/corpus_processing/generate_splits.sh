@@ -12,7 +12,7 @@ echo 'Joint size:' ${BOTH}
 
 
 echo 'shuffling corpus...'
-paste ${EN} ${JA} | gshuf > corpus.shuf
+paste ${EN} ${JA} | shuf > corpus.shuf
 
 echo 'separating into en/ja'
 cat corpus.shuf | cut -f1 > corpus.shuf.en
