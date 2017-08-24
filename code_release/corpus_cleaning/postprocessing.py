@@ -5,7 +5,16 @@ noise like leading dashes, non-ascii characters,
 non-english examples, etc
 
 === USAGE
-python postprocessing.py [en file] [ja file]
+python postprocessing.py [en file] [ja file] > output
+
+=== INPUTS
+"en file" and "ja file" are 1-phrase-per-line parallel text files
+
+=== OUTPUTS
+A single file representing a cleaned parallel corpus.
+The en and ja phrases in this file are tab-separated
+
+
 """
 import string
 import sys
