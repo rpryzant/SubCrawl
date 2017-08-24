@@ -25,7 +25,7 @@ Each file is a standalone tool with usage instructions given in the comment head
 
 ## Citation
 
-If you use these data, please cite us:
+Please give the proper citation or credit if you use these data:
 
 ```
 LREC citation
