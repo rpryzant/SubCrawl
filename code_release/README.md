@@ -23,4 +23,10 @@ Each file is a standalone tool with usage instructions given in the comment head
 
 * **corpus_processing**: Scripts for manipulating completed datasets, including tokenization and train/test/dev splitting.
 
+## Citation
 
+If you use these data, please cite us:
+
+```
+LREC citation
+```
