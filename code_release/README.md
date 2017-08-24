@@ -1,23 +1,16 @@
 
-## Requirements
-These can all be installed with pip.
 
-* python >= v2.7.11
-* `pysrt`
-* `guessit`
-* `tqdm`
-* `pyunpack`
-* `ffmpy`
-* `nltk`
+# JESC Code Release
+
+Welcome to the JESC code release! This repo contains the crawlers, parsers, aligners, and various tools used to create the Japanese-English Subtitle Corpus (JESC). 
+
+For more information about JESC please visit its homepage at [TODO]() or read the paper ([TODO]). 
+
+
+## Requirements
+Use pip: `pip install -r requirements.txt`
 
 Additionally, some of the corpus_processing scripts make use of [google/sentencepiece](https://github.com/google/sentencepiece), which has installation instructions on its github page. 
-
-
-## Description
-
-Welcome to the SubCrawl code release! What follows are each of the subdirectories, their constitutent programs, and a brief description of what each program does.
-
-For an implementation of the proxy-A-distance algorithm outlined in the paper, please refer to [this repository](https://github.com/rpryzant/proxy-a-distance). 
 
 
 ### corpus_generation
