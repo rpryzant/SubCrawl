@@ -13,16 +13,14 @@ Use pip: `pip install -r requirements.txt`
 Additionally, some of the corpus_processing scripts make use of [google/sentencepiece](https://github.com/google/sentencepiece), which has installation instructions on its github page. 
 
 
-### corpus_generation
+## Instructions
 
-Scripts for downloading, parsing, and aligning subtitles from the internet.
+Each file is a standalone tool with usage instructions given in the comment header. These files are organized into the following categories (subdirectories):
 
-### corpus_cleaning
+* **corpus_generation**: Scripts for downloading, parsing, and aligning subtitles from the internet.
 
-Scripts for converting file formats, thresholding on length ratios, and spellchecking.
+* **corpus_cleaning**: Scripts for converting file formats, thresholding on length ratios, and spellchecking.
 
-### corpus_processing
-
-Scripts for manipulating completed datasets, including tokenization and train/test/dev splitting.
+* **corpus_processing**: Scripts for manipulating completed datasets, including tokenization and train/test/dev splitting.
 
 
